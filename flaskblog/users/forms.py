@@ -4,8 +4,7 @@
 from flask_wtf import FlaskForm
 #The FileField provided by Flask-WTF differs from the WTForms-provided field. It will check that the file is a non-empty instance of FileStorage, otherwise data will be None.
 
-#Remember to set the enctype of the HTML form to multipart/form-data, otherwise request.files will be empty.
-------------------------------------------------------------------------------------------------------------
+#Remember to set the enctype of the HTML form to multipart/form-data, otherwise request.files will be empty 
 #Flask-WTF supports validating file uploads with FileRequired and FileAllowed. They can be used with both Flask-WTF's and WTForms's FileField classes.
 from flask_wtf.file import FileField, FileAllowed
 #Fields are defined as members on a form in a declarative fashion:
